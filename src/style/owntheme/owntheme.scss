@@ -1,0 +1,19 @@
+/*material自定义主题*/
+
+// 引入material自定义主题支持
+@import '~@angular/material/theming';
+// 引入material公用的主题风格
+@include mat-core();
+// 颜色选择地址：选择地址：https://material.io/color/#!/?view.left=1&view.right=0&secondary.color=26C6DA&primary.color=FFF176
+
+// 主色 
+$my-app-primary: mat-palette($mat-cyan); 
+// 副色
+$my-app-accent: mat-palette($mat-teal, A100, A100, A400); 
+ // 警告色
+$my-app-warn: mat-palette($mat-red);
+
+// 利用自定义颜色组装自定义主题
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+// 设置自定义主题，使其生效
+@include angular-material-theme($my-app-theme);

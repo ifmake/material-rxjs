@@ -1,0 +1,15 @@
+.nav-far{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .nav-bar {
+        height: 100%;
+        width: 50%;
+        a {
+            @include text-line-center(3rem);
+        }
+       
+    }
+}

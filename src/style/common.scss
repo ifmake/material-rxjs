@@ -1,0 +1,26 @@
+
+/*全局主题CSS样式*/
+// 深紫琥珀主题
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber';
+
+// 靛蓝粉主题
+// @import "~@angular/material/prebuilt-themes/indigo-pink";
+
+// 粉红蓝灰色主题
+// @import '~@angular/material/prebuilt-themes/pink-bluegrey'; 
+
+// 紫色绿色主题
+// @import '~@angular/material/prebuilt-themes/purple-green'; 
+
+// 自定义主题
+@import 'owntheme/owntheme';
+
+/*引入图标库*/
+@import '../assets/css/iconfont/material-icons.css';
+
+/*公用mixin库*/
+@import 'mixin/mixin';
+
+/*字体*/
+@import 'font/font-color';
+@import 'font/font-size';

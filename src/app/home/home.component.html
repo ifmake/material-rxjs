@@ -1,0 +1,18 @@
+<div class="pancel">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="请输入" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+          <span>{{ state.name }}</span> |
+          <small>Population: {{state.population}}</small>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <mat-slide-toggle  class="example-margin" color="warn"  
+    [checked]="stateCtrl.disabled"
+    (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
+      是否禁用输入框
+    </mat-slide-toggle>
+  </form>
+</div>
