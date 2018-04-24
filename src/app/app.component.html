@@ -11,8 +11,8 @@
 </mat-tab-group> -->
 <nav>
     <ul class="nav-far">
-        <li class="nav-bar"><a [routerLink]="['home']">主页</a></li>
-        <li class="nav-bar"><a [routerLink]="['owncenter']">跟人中心</a></li>
+        <li class="nav-bar"><a [routerLink]="['home']" [routerLinkActive]="['active']">主页</a></li>
+        <li class="nav-bar"><a [routerLink]="['owncenter']" [routerLinkActive]="['active']">个人中心</a></li>
     </ul>
 </nav>
 <router-outlet></router-outlet>

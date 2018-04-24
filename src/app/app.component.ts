@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { MAT_CHECKBOX_CLICK_ACTION } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +10,21 @@ import { MAT_CHECKBOX_CLICK_ACTION } from '@angular/material';
   ],
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular移动端开发';
   checked = true;
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
+  ngOnInit() {
+    this.router.navigate(['/home']);
+  }
 
   checkItem() {
     if (this.checked) {
       this.checked = false;
-      console.log('选中');
     }else {
       this.checked = true;
-      console.log('未选中');
     }
       console.log(this.checked);
   }
