@@ -1,3 +1,13 @@
-<p>
-  个人中心
-</p>
+<form class="form-body" [formGroup]="UserFormInfo">
+  <mat-form-field class="form-full-width" >
+    <input matInput placeholder="请输入姓名" formControlName="name" [(ngModel)]="userInfo.cnname" name="cnname"/>
+    <mat-error>
+      <strong *ngIf="UserFormInfo"></strong>
+    </mat-error>
+  </mat-form-field>
+ 
+
+  <mat-form-field class="form-full-width">
+    <textarea matInput placeholder="请输入描述"></textarea>
+  </mat-form-field> 
+</form>

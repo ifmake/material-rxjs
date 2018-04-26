@@ -1,0 +1,10 @@
+.form-body {
+    @include padding();
+    min-width: 150px;
+    max-width: 500px;
+    .form-full-width {
+        display: block;
+        width: 100%;
+      }
+  }
+  
