@@ -4,7 +4,6 @@ import { Http } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 
 import { OwnCenterEntity } from '../../entity/owncenter.entity';
-import { ListResult } from '../../interface/owncenter.interface';
 import { BaseConfigService } from '../../../configFile/base_config.service';
 import { Config } from 'protractor/built/config';
 
